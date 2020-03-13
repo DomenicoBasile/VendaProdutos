@@ -294,3 +294,5 @@ C:\Users\domenico.bdcarneiro\Desktop\VendaProdutos\VendaProduto\obj\Debug\90\sta
 C:\Users\domenico.bdcarneiro\Desktop\VendaProdutos\VendaProduto\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\domenico.bdcarneiro\Desktop\VendaProdutos\VendaProduto\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\domenico.bdcarneiro\Desktop\VendaProdutos\VendaProduto\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\domenico.bdcarneiro\Desktop\VendaProdutos\VendaProduto\obj\Debug\90\res\layout\activity_updateproduto.xml
+C:\Users\domenico.bdcarneiro\Desktop\VendaProdutos\VendaProduto\obj\Debug\90\android\src\crc6496c1ffd499893384\UpdateProdutoActivity.java
