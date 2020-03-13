@@ -103,6 +103,22 @@ namespace VendaProduto.Activities
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.toolbar_produto, menu);
+
+            //Cria e configura o SearchView
+            IMenuItem item = menu.FindItem(Resource.Id.tlbItem_pesquisarProduto);
+            View searchView = item.ActionView as Android.Support.V7.Widget.SearchView;
+            Android.Support.V7.Widget.SearchView itemPesquisar;
+            itemPesquisar = searchView.JavaCast<Android.Support.V7.Widget.SearchView>();
+
+            //Método de evento que é executado a cada letra que digitamos ou apagamos
+            itemPesquisar.QueryTextChange += (s, e) =>
+            {
+                //Aqui iremos fazer a nossa busca!
+                List<Produto> filtroDeProdutos = Produto.BuscarProduto(e.NewText, infoProduto);
+                AdaptadorProdutos adaptador = new AdaptadorProdutos(this, filtroDeProdutos);
+                lstProdutos.Adapter = adaptador;
+            };
+
             return base.OnCreateOptionsMenu(menu);
         }
 
